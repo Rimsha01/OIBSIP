@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(238, 229, 223);
+}
+.navbar-nav{
+    font-size: 18px;
+}
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1;
+}
+.progress{
+    height:30px;
+    border-radius:10px;
+    transition:all 0.5s ease;
+
+}
+.progress:hover{
+    transform: scale(1.1);
+}
+.btn:hover{
+    color:white
+}
+.social-links{
+    position: absolute;
+    right: 5%;
+    bottom: 8px;
+  }
+  .social-links::before{
+    content:"";
+    width:80%;
+    height:3px;
+    position: absolute;
+    top:15%;
+    left:-150px;
+    background-color:#12140f;
+  }
+  .social-links i{
+    margin-left: 10px;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background-color:rgb(90, 88, 86);
+    display: inline-flex;
+    align-items:center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  .social-links i:hover{
+    transform: translateY(-10px);
+  }
