@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge," />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandledFriendly" content="true">
+    <title>Food Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>  
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <a href="#" class="logo">Zaika</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="icon">
+          <a href="#" class="user"><i class="fal fa-user"></i>
+          <a href="#" class="icon-text"><i class="far fa-angle-down"></i>
+          </a>
+        </div>
+      </nav>
+      <div class="right-sidebar"></div>
+      <div class="content">
+        <div class="left">
+          <h2>Food</h2>
+          <h3>Discover Restaurent <br>& Delicious Food</h3>
+          <form >
+            <input type="text" placeholder="Search Restaurant,Food">
+            <input type="submit" value="Go">
+          </form>
+      </div>
+      <div class="right">
+        <div class="image">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img1.png" alt=""></div>
+              <div class="swiper-slide"><img src="img2.png" alt=""></div>
+              <div class="swiper-slide"><img src="img3.png" alt=""></div>
+              <div class="swiper-slide"><img src="img4.png" alt=""></div>
+              <div class="swiper-slide"><img src="img5.png" alt=""></div>       
+            </div>
+          </div>  
+      </div>
+      <div class="social-links">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="far fa-envelope"></i>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
